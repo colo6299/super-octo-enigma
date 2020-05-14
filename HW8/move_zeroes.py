@@ -2,6 +2,11 @@
 # I really like the code for this one!
 # Minimizes all array operations, I think
 def move_zeroes(array):
+    '''
+    O(n) average runtime.
+
+    O(1) memory, it's an in-place operation.
+    '''
     
     def find_replacement(insertion_index):
         for search_index in range(insertion_index, len(array)):
